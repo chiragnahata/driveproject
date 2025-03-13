@@ -96,5 +96,5 @@ Feel free to fork the repo and submit PRs. Open an issue if you find any bugs! �
 This project is licensed under the **MIT License**.
 
 ---
-_Developed by [Somyadip Ghosh] ❤️_
+_Developed by Somyadip Ghosh ❤️_
 
