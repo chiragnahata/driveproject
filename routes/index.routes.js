@@ -110,6 +110,9 @@ router.get('/download/:path', authMiddleware, async (req, res) => {
       console.error("Download error:", err.message);
       res.status(500).json({ error: err.message });
   }
+    // ✅ Redirect "/" to "/user/register"
+router.get("/", (req, res) => {
+    res.redirect("/user/register");
 });
 
 
