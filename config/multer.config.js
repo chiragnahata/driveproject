@@ -1,11 +1,11 @@
 const multer = require("multer");
 const { createClient } = require("@supabase/supabase-js");
-const fs = require("fs");
 
-
-const config = JSON.parse(fs.readFileSync("supabase-admin-sdk.json", "utf8"));
-
-const supabase = createClient(config.api_url, config.service_role_key);
+// Use environment variables instead of reading a JSON file
+const supabase = createClient(
+  process.env.SUPABASE_URL,
+  process.env.SUPABASE_KEY
+);
 
 const storage = multer.memoryStorage();
 const upload = multer({ storage });
